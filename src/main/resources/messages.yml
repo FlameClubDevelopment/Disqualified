@@ -1,0 +1,175 @@
+# Bukkit Sounds List -> https://jd.bukkit.org/org/bukkit/Sound.html (If you don't want to have any sound, just put the sound as 'none'
+NETWORK:
+  JOIN-MESSAGE-ENABLED: true
+  JOIN-SOUND: 'NOTE_PLING'
+  JOIN-MESSAGE: # Put {C} before the text to center the line
+    - '&7&m----------------------------------------------------'
+    - '&4Welcome &fto &4ServerName Network'
+    - '&f '
+    - '&4 ✦ Store: &f<store>'
+    - '&4 ✦ Discord: &f<discord>'
+    - '&4 ✦ Teamspeak: &f<teamspeak>'
+    - '&f '
+    - '&7Navigate to modalities using the &fServer-Selector&7!'
+    - '&7&m----------------------------------------------------'
+  SERVER-MANAGER:
+    PREFIX: ''
+    FORMAT: '&7[&4Disqualified&7] &4&l<server>&f server will be <status> &fin &45 &fseconds'
+  CHAT-MANAGER:
+    CLEAR: '&4Chat has been cleared by &f<player>'
+    MUTE: '&4Chat has been mute by &f<player>'
+    UNMUTE: '&4Chat has been un-mute by &f<player>'
+    ALREADY: '&cChat is already <label>'
+    DELAY: '&4Chat delay has been set to <delay> by &f<player>'
+    PLAYER-MESSAGE:
+      MUTE: '&cChat is muted.'
+      DELAY: '&cYou can only talk once every <time> <left> in chat!'
+  STAFF-ALERTS:
+    ENABLED: true
+    JOIN: '&7[&4S&7] &4<player> &fconnected to &4<server>'
+    QUIT: '&7[&4S&7] &4<player> &fdisconnected from &4<server>'
+    SWITCH: '&7[&4S&7] &4<player> &fconnected to &4<server> &ffrom &4<lastServer>'
+  SERVER-TPS:
+    MESSAGE:
+      - '&7&m---------------------'
+      - '&7 * &fTPS: &4%tps%'
+      - '&7 * &fUptime: &4%uptime%'
+      - '&7 * &fMaxMemory: &4%max-memory%'
+      - '&7 * &fAllMemory: &4%all-memory%'
+      - '&7 * &fFreeMemory: &4%free-memory%'
+      - ''
+      - '&4Worlds:'
+      - '<world>'
+      - '&7&m---------------------'
+    WORLD-MESSAGE: '&8 * &4<name> &7| &4Chunks&7: &f<chunks> &7| &4Entities&7: &f<entities>'
+
+COMMANDS:
+  FREEZE:
+    LEAVE-FREEZE-CLICKABLE:
+      ENABLED: true
+      TEXT: '&7&8** Click to ban **'
+      TEXT-CLICKABLE: '&7Click here to &4ban'
+      COMMAND: '/tempban <player> 14d Refusal to SS -s'
+    LEAVE-FREEZE: '&4<player> &fhas been disconnect while frozen '
+    JOIN-FREEZE: '&4<player> &fhas been reconnect while frozen'
+    FROZE:
+      PLAYER: '&4You''ve been frozen'
+      STAFF: '&4<sender> &fhas frozen &4<player>'
+    UNFROZE:
+      PLAYER: '&4You''ve been unfrozen'
+      STAFF: '&4<sender> &fhas unfrozen &4<player>'
+    FREEZE-ALLOWED-COMMANDS:
+      - '/msg'
+      - '/r'
+      - '/message'
+      - '/helpop'
+    FREEZE-MESSAGE:
+      SOUND:
+        ENABLED: true
+        SOUND: NOTE_PLING
+      MESSAGE:
+        - '&f⬛⬛⬛⬛&c⬛&f⬛⬛⬛⬛'
+        - '&f⬛⬛⬛&c⬛&6⬛&c⬛&f⬛⬛⬛'
+        - '&f⬛⬛&c⬛&6⬛&0⬛&6⬛&c⬛&f⬛⬛'
+        - '&f⬛⬛&c⬛&6⬛&0⬛&6⬛&c⬛&f⬛⬛'
+        - '&f⬛&c⬛&6⬛⬛&0⬛&6⬛⬛&c⬛&f⬛'
+        - '&f⬛&c⬛&6⬛⬛⬛⬛⬛&c⬛&f⬛'
+        - '&c⬛&6⬛⬛⬛&0⬛&6⬛⬛⬛&c⬛'
+        - '&c⬛⬛⬛⬛⬛⬛⬛⬛⬛'
+        - ''
+        - '&4Do NOT log out!'
+        - '&cIf you do, you will be banned'
+        - '&4Please download &4&lTeamSpeak &4and join'
+        - '&4ts.servername.net'
+  LIST:
+    RANK-SEPARATOR: '&f,'
+    PLAYER-SEPARATOR: '&f,'
+    FORMAT:
+      - '<rank_list>'
+      - ''
+      - '&7[&f<online_players>&8/&f<max_players>&7]'
+      - ''
+      - '&aOnline'
+      - '<players_online>'
+  SOCIAL:
+    STORE: 'store.servername.net'
+    TWITTER: 'https://twitter.com/@ServerNameNET'
+    DISCORD: 'https://discord.servername.net'
+    TEAMSPEAK: 'ts.servername.net'
+    MESSAGES: '&4<command>&7: &f<social>'
+  BROADCAST: '&7[&4&lHub-01&7] &f<text>'
+  TELEPORT-MESSAGES:
+    TP: '&aYou have been teleported to &f<target>'
+    TOP: '&aYou have been teleported to the top.'
+    TPHERE:
+        SENDER: '&aYou have been teleported &f<target> &ato you'
+        TARGET: '&f<player> &ateleported you to his location.'
+        TPALL: '&aAll players has been teleport to &f<player>'
+        TPPOS: '&aYou has been teleported to &f<x>&ax &f<y>&ay &f<z>&az'
+    FIX-MESSAGES:
+        HAND: '&aYou repaired the item in your hand'
+        ALL: '&aYou repaired all your items'
+    RENAME: '&aYou name your item to <text>'
+    CLEAR-MESSAGES:
+        DEFAULT: '&aYou cleaned up your inventory'
+        OTHER:
+          TARGET: '&aYour inventory was cleared by <player>'
+          SENDER: '&aYou cleared the inventory of <target>'
+    LORE-MESSAGES:
+        ADD: '&aYou added a lore to your item successfully'
+        REMOVE: '&aYou remove a lore to your item successfully'
+    SPEED-MESSAGES:
+        WALK: '&aYou set your walk speed to <amount>'
+        FLY: '&aYou set your fly speed to <amount>'
+    FEED-MESSAGE: '&aSuccessfully regenerate food'
+    FLY-MESSAGE:
+        DEFAULT: '&7You have <status> &7your flight mode'
+        OTHER:
+          SENDER: '&7You have <status> &a<target>''s &7flight mode.'
+          TARGET: '&aYour flight mode has been <status> &7by &a<sender>''s'
+    HEAL-MESSAGES:
+        DEFAULT: '&aSuccessfully regenerate heal'
+        OTHER: '&f<target>''s &aheal successfully regenerate'
+    SKULL-MESSAGE: '&a<target>''s head was added to your inventory successfully'
+    SKULL-CLICK-MESSAGE: '&7You clicked <player>''s head!'
+    GAMEMODE-MESSAGES:
+        DEFAULT: '&aYour update your gamemode to &f<gamemode>'
+        OTHER: '&aYou updated &f<target>''s &agamemode to &f<gamemode>'
+    PING-MESSAGES:
+        SOUND: 'NOTE_PLING'
+        DEFAULT: '&aYour ping is&7: <ping>ms'
+        OTHER: '&a<target>''s &fping is&7: <ping>ms'
+    TIME-MESSAGE: "&aYour time has been updated to <timeSetting>"
+    GEO-IP-MESSAGE: '&f<player>''s &acountry is &f<country>'
+    COINS-MESSAGE:
+        DEFAULT: '&aYou have &2<amount> &acoins.'
+        TARGET: '&2<target> &ahas &2<amount> &acoins.'
+        MANAGER:
+          SET: '&aYou set <target>''s coints to <amount>'
+          ADD-REMOVE: '&aYou update <target>''s coins from <coins> to <amount>'
+    GRANT:
+        PERM: '&aYou have been permanently granted to <rank>.'
+        TEMP: '&aYou have been permanently granted to <rank> for <time>.'
+        GRANT-MENU:
+          RANK:
+            - '&aClick to grant &f<name> &a to <rank> rank!'
+          GRANTS:
+            LORE:
+              - '&7&m------------------------'
+              - '&aAdded by &7» &f<addedBy>'
+              - '&aAdded date &7» &f<addedDate>'
+              - '&aGrant duration &7» &f<duration>'
+              - '&aGrant reason &7» &f<reason>'
+              - '&aActive &7» &f<active>'
+              - '&aExpire &7» &f<expire>'
+              - '<not-expired>'
+              - '<if-removed>'
+              - '&7&m------------------------'
+            NOT-EXPIRED:
+              - ''
+              - '&cRight click to remove this grant!'
+            IF-REMOVED:
+              - ''
+              - '&aRemoved by &7 &f<removedBy>'
+              - '&aRemoved date &7 &f<removedDate>'
+          SENDER: '&aYou'

@@ -1,0 +1,16 @@
+MONGO:
+  HOST: '127.0.0.1'
+  PORT: 27017
+  DATABASE: 'core'
+  AUTH:
+    ENABLED: true
+    USERNAME: 'user'
+    PASSWORD: 'disqualified'
+    AUTH-DATABASE: 'admin'
+
+REDIS:
+  HOST: ''
+  PORT: 6379
+  AUTHENTICATION:
+    ENABLED: true
+    PASSWORD: ''

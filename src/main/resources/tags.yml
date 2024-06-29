@@ -1,0 +1,47 @@
+title: '&8Tags Menu'
+# Permission is core.tags.<name>
+no-perms-lore:
+  - '&7&m---------------------'
+  - '&cYou don''t have this tag'
+  - '&cPurchase it at store.servername.net'
+  - '&7&m---------------------'
+tags:
+  verified:
+    name: 'Verified'
+    displayName: '&a✔'
+    color: GREEN
+    prefix: '&7[&a✔&7]'
+    permission: 'core.tag.verified'
+    item:
+      material: NAME_TAG
+      data: 0
+    lore:
+      - '&7&m------------------'
+      - '&4<tag> &f<player>&7: &fHello!'
+      - '&7&m------------------'
+  heart:
+    name: 'Heart'
+    displayName: '&c❤'
+    color: RED
+    prefix: '&7[&c❤&7]'
+    permission: 'core.tag.heart'
+    item:
+      material: NAME_TAG
+      data: 0
+    lore:
+      - '&7&m------------------'
+      - '&4<tag> &f<player>&7: &fHello!'
+      - '&7&m------------------'
+  money:
+    name: 'Money'
+    displayName: '&a$&2$&a$'
+    color: GREEN
+    prefix: '&7[&a$&2$&a$&7]'
+    permission: 'core.tag.money'
+    item:
+      material: NAME_TAG
+      data: 0
+    lore:
+      - '&7&m------------------'
+      - '&4<tag> &f<player>&7: &fHello!'
+      - '&7&m------------------'

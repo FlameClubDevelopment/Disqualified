@@ -1,0 +1,70 @@
+SETTINGS:
+  DEBUG: false
+  LICENSE: 'Open-Source'
+  PREFIX: ''
+  SERVER-NAME: 'Hub-01' # Example server name
+  SERVER-ANNOUNCE: '&8[&4✖&8] <rank><name> &fis playing on &4<server_name>&f! Use &4/play <server_name> &fto join.'
+  AUTO-MUTE:
+    FORBIDDEN_WORDS:
+      - 'L'
+      - 'pussy'
+      - 'fuck'
+      - 'ez'
+      - 'easy'
+      - 'zzz'
+    COMMAND: 'tempmute <player> 1d Self-Moderator > Toxicity -s'
+  CHAT:
+    NAME-COLOR-MENU-TITLE: '&8Choose your name color'
+    CHATCOLOR-MENU-TITLE: '&8Choose your chat color'
+    FORMAT:
+      ENABLED: true
+      DEFAULT-COLOR: WHITE
+      FORMAT: '<rank><tag><nameColor><name>&7: <chatcolor><text>'
+    MUTE: false
+    DELAY: 3
+  STAFF-CHAT:
+    FORMAT: '&7[&4SC&7] &7[&e<server>&7] &f<rank><player>&7: &e<text>'
+    SOUND: 'NOTE_PLING'
+    TOGGLE: '&4Staff-Chat &fhas been <status>'
+  ADMIN-CHAT:
+    FORMAT: '&7[&4AC&7] &7[&e<server>&7] &f<rank><player>&7: <text>'
+    SOUND: 'NOTE_PLING' # Only in toggle msg
+    TOGGLE: '&4Admin-Chat &fhas been <status>'
+  TIPS:
+    ENABLED: false
+    DELAY: 60
+    MODE: normal # normal or random
+    TIPS-LIST: #Use {0} if you want a separator line before the tip. {C}
+      - '&4&l[TIP] &7Check our website: &fhttps://www.servername.net'
+      - '&4&l[TIP] &7Support the server: &fhttps://store.servername.net'
+      - '&4&l[TIP] &7Join our discord: &fhttps://discord.servername.net'
+  PRIVATE-MESSAGES:
+    NOTIFICATION-SOUND: 'NOTE_PLING' # Put none or NONE to disable sounds
+    FORMAT: # <rank>,<prefix>
+      SENDER: '&7(To &4<target>&7) &f<text>'
+      TARGET: '&7(From &4<sender>&7) &f<text>'
+      SOCIAL-SPY: '&7[&cSocialSpy&7] &a<sender> &4<target> &f<text>'
+  REPORT:
+    COOLDOWN: 60
+    MSG:
+      SENDER: '&aYou reported &f<target> &afor &f<text>.'
+      STAFF: '&7[&cReport&7] &7[<server>] &f<sender> &areported &f<target> &afor &f<reason>'
+      COOLDOWN: '&cYou must be wait <time> <left> to report another player.'
+  COMMANDS-BLOCKED:
+    MSG: '&fUnknown command. Type "/help" for help.'
+    LIST:
+      - '/plugins'
+      - '/bukkit:pl'
+      - '/pl'
+  NAME-MC-CHECK:
+    ENABLED: true
+    SOUND: 'ORB_PICKUP'
+    JOIN-MSG:
+      - '&7&m----------------------------------------------------'
+      - '&4Vote for us in NameMC to get the &aVerified &4Prefix!'
+      - '&8 ▸ &ahttps://namemc.com/server/servername.net'
+      - '&7&m----------------------------------------------------'
+    SERVER-IP: 'servername.net'
+    EXECUTE-CMD: 'setperm <player> tag.verfied'
+  DISABLE-COMMANDS:
+    - '' # Put without "/"

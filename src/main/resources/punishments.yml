@@ -1,0 +1,153 @@
+PUNISHMENT-MESSAGES:
+  MESSAGE-IN-CONSOLE: true
+  SILENT: '&7[&aSilent&7] '
+  BAN:
+    TEMPORARILY:
+      - '&8&m------------------------------------------------'
+      - '&4<sender> removed <target> from the Network for <duration>.'
+      - '&4Reason: <reason>'
+      - '&8&m------------------------------------------------'
+    PERMANENT:
+      - '&8&m------------------------------------------------'
+      - '&4<sender> removed <target> from the Network'
+      - '&4Reason: <reason>'
+      - '&8&m------------------------------------------------'
+    UN-BAN:
+      - '&8&m------------------------------------------------'
+      - '&4<sender> unbanned <target> from the Network'
+      - '&4Reason: <reason>'
+      - '&8&m------------------------------------------------'
+  BLACKLIST:
+    PERMANENT:
+      - '&8&m------------------------------------------------'
+      - '&4<sender> blacklisted <target> from the Network'
+      - '&4Reason: <reason>'
+      - '&8&m------------------------------------------------'
+    UN-BLACKLIST:
+      - '&8&m------------------------------------------------'
+      - '&4<sender> unblacklisted <target> from the Network.'
+      - '&4Reason: <reason>'
+      - '&8&m------------------------------------------------'
+  MUTE:
+    TEMPORARILY:
+      - '&8&m------------------------------------------------'
+      - '&4<sender> muted <target> from the Network for <duration>.'
+      - '&4Reason: <reason>'
+      - '&8&m------------------------------------------------'
+    PERMANENT:
+      - '&8&m------------------------------------------------'
+      - '&4<sender> muted <target> from the Network.'
+      - '&4Reason: <reason>'
+      - '&8&m------------------------------------------------'
+    UN-MUTE:
+      - '&8&m------------------------------------------------'
+      - '&4<sender> unmuted <target> from the Network.'
+      - '&4Reason: <reason>'
+      - '&8&m------------------------------------------------'
+  WARN:
+    - '&8&m------------------------------------------------'
+    - '&4<sender> warned <target> for <reason>'
+    - '&8&m------------------------------------------------'
+  KICK:
+    - '&8&m------------------------------------------------'
+    - '&4<sender> kicked <target> from the Network.'
+    - '&4Reason: <reason>'
+    - '&8&m------------------------------------------------'
+  PLAYER:
+    WARN:
+      - '&cYou have been warned by <sender>.'
+      - '&cReason&7: <reason>'
+    MUTE:
+      TEMPORARILY:
+        - '&cYou were temporarily silenced by <sender>.'
+        - '&cReason: <reason>'
+        - '&cDuration: <duration>'
+      PERMANENT:
+        - '&cYou were permanent silenced by <sender>.'
+        - '&cReason: <reason>'
+    CHAT:
+      PERMANENT:
+        - '&cYou have been permanently muted from this server.'
+      TEMPORARILY:
+        - '&cYou have been muted for <mute-time>'
+KICK-PUNISHMENT-MESSAGES:
+  ALT-RELATION:
+    - '&cThis punishment is in relation to &f<alt-name>'
+  KICK:
+    - '&7&m--------------------'
+    - '&cYou have benn kick from &4ServerName Network'
+    - '&cYou were kicked by <punishSender>'
+    - '&cReason&7: &f<punishReason>'
+    - ''
+    - '&7&m--------------------'
+  IP-BAN:
+    - '&7&m--------------------'
+    - '&cYou have been blacklist from &4ServerName Network'
+    - '&cSender&7: &f<punishSender>'
+    - '&cPunish date&7: &f<punishDate>'
+    - '&cBan expires in&7: &f<punishRemain>'
+    - '&cReason&7: &f<punishReason>'
+    - '<alt-relation>'
+    - ''
+    - '&astore.servername.net'
+    - '&7&m--------------------'
+  BAN:
+    - '&7&m--------------------'
+    - '&cYou have been banned from &4ServerName Network'
+    - '&cSender&7: &f<punishSender>'
+    - '&cPunish date&7: &f<punishDate>'
+    - '&cBan expires in&7: &f<punishRemain>'
+    - '&cReason&7: &f<punishReason>'
+    - '<alt-relation>'
+    - ''
+    - '&astore.servername.net'
+    - '&7&m--------------------'
+  TEMP-BAN:
+    - '&7&m--------------------'
+    - '&cYou have been temporaly banned from &4ServerName Network'
+    - '&cSender&7: &f<punishSender>'
+    - '&cPunish date&7: &f<punishDate>'
+    - '&cBan expires in&7: &f<punishRemain>'
+    - '&cReason&7: &f<punishReason>'
+    - '<alt-relation>'
+    - ''
+    - '&astore.servername.net'
+    - '&7&m--------------------'
+PUNISHMENTS-MENU:
+  ITEM:
+    NAME: '&cPunishment ID &f#<id> &7(<status>&7)'
+    TIME-LEFT:
+      - ''
+      - '&cTime Left&7: &f <time>'
+    PARDONED:
+      EXPIRED:
+        - ''
+        - '&cPardoned at&7: &f<pardonedDate>'
+        - '&cPardoned by&7: &f<pardonedBy>'
+        - '&cPardoned Reason&7: &f<pardonedReason>'
+      ACTIVE:
+        - ''
+        - '&cExpired in&7: &f<expiredIn>'
+    LORE:
+      - ''
+      - '&cAdded at&7: &f<addedDate>'
+      - '&cAdded by&7: &f<addedBy>'
+      - '&cAdded reason&7: &f<reason>'
+      - '<time-left>'
+      - '<punishment-pardoned>'
+      - ''
+ALTS-FORMAT:
+  ALT-FORMAT: '&4 ▸ &f<player> <status>'
+  FORMAT:
+    - '&4&lDisqualified &7- &cPlayer Alts'
+    - '&7&m----------------------'
+    - '&4 ▸ &4Player&7: &f<player>'
+    - '&8 ▸ &4Alts&7:'
+    - '<alts>'
+    - '&7&m----------------------'
+MENU:
+  PLAYER-INFO:
+    - '&4Name&7: &f<player>'
+    - '&4Country&7: &f<country>'
+    - '&4Alts&7: &f<alts>'
+  ALTS-INFO: '&4 ▸ &f<player> <status>'

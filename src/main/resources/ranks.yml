@@ -1,0 +1,65 @@
+Owner:
+  NAME: Owner
+  PREFIX: '&7[&4Owner&7] '
+  SUFFIX: ''
+  COLOR: DARK_RED
+  DEFAULT: false
+  BOLD: false
+  ITALIC: false
+  PRIORITY: 100
+  INHERITANCE:
+    - 'Default'
+  PERMISSIONS:
+    - 'core.owner'
+Manager:
+  NAME: Manager
+  PREFIX: '&7[&6Manager&7] '
+  SUFFIX: ''
+  COLOR: GOLD
+  DEFAULT: false
+  BOLD: false
+  ITALIC: false
+  PRIORITY: 50
+  INHERITANCE:
+    - 'Default'
+  PERMISSIONS:
+    - 'core.manager'
+Mod:
+  NAME: Mod
+  PREFIX: '&7[&5Mod&7] '
+  SUFFIX: ''
+  COLOR: DARK_PURPLE
+  DEFAULT: false
+  BOLD: false
+  ITALIC: false
+  PRIORITY: 30
+  INHERITANCE:
+    - 'Default'
+  PERMISSIONS:
+    - 'core.mod'
+Vip:
+  NAME: Vip
+  PREFIX: '&7[&2VIP&7] '
+  SUFFIX: ''
+  COLOR: DARK_GREEN
+  DEFAULT: false
+  BOLD: false
+  ITALIC: false
+  PRIORITY: 10
+  INHERITANCE:
+    - 'Default'
+  PERMISSIONS:
+    - 'core.vip'
+Default:
+  NAME: Default
+  PREFIX: '&a '
+  SUFFIX: ''
+  COLOR: GREEN
+  DEFAULT: true
+  BOLD: false
+  ITALIC: false
+  PRIORITY: 1
+  INHERITANCE:
+    - 'Default'
+  PERMISSIONS:
+    - 'core.default'

@@ -1,6 +1,6 @@
 # Disqualified (1.7 - 1.21)
 
-Disqualified is a Minecraft plugin designed to enhance server functionality with various features including chat management, social media integration, and link restrictions. This repository contains the source code and configuration files needed to run the plugin.
+Disqualified is a Minecraft Network/Server core plugin used in FireMC Network, designed to enhance server functionality with various features including chat management, social media integration, and link restrictions. This repository contains the source code and configuration files needed to run the plugin.
 
 ## Table of Contents
 
@@ -8,8 +8,7 @@ Disqualified is a Minecraft plugin designed to enhance server functionality with
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Important](#important)
 
 ## Features
 
@@ -72,6 +71,6 @@ Social media links are configurable and can be accessed via specific commands.
 
 The plugin prevents players from sending links in chat by default. You can customize the message and behavior in the configuration file.
 
-## Credits
+## Important
 
-- Original Plugin: https://github.com/FrozedClubDevelopment/Zoom
+This project is abandoned, you can still use it.
